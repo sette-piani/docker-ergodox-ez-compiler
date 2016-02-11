@@ -23,4 +23,4 @@ VOLUME /keymap
 
 COPY entrypoint.sh /
 
-ENTRYPOINT [ "./entrypoint.sh" ]
+CMD [ "./entrypoint.sh" ]
