@@ -5,7 +5,7 @@ if [ ! -f "/keymap/keymap.c" ]; then
   exit 1
 fi
 
-cd /firmware/keyboard/ergodox_ez
+cd /firmware/keyboards/ergodox/ez
 
 rm -rf keymaps/__custom                # (just in case...)
 mkdir -p keymaps/__custom
@@ -13,4 +13,4 @@ cp /keymap/keymap.c keymaps/__custom
 
 make KEYMAP=__custom
 
-cp -f ergodox_ez.hex /keymap
+cp -f /firmware/.build/ergodox_ez___custom.hex /keymap/ergodox_ez.hex
