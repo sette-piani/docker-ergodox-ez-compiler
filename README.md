@@ -1,5 +1,10 @@
 # Docker ErgodoxEZ firmware compiler
 
+[![](https://images.microbadger.com/badges/image/potz/ergodox-ez-compiler.svg)](https://microbadger.com/images/potz/ergodox-ez-compiler)
+
+[![](https://images.microbadger.com/badges/version/publysher/automated-badger.svg)](http://microbadger.com/images/publysher/automated-badger)
+
+
 This is a small image that has a script and all the dependencies needed to compile your [Ergodox EZ](http://www.ergodox-ez.com) firmware.
 
 It uses the recommended build tools and instructions from [Jack Humbert's qmk firmware repo](https://github.com/jackhumbert/qmk_firmware/tree/master/keyboard/ergodox_ez).
