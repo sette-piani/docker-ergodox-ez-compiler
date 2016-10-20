@@ -2,7 +2,7 @@ FROM debian:jessie
 
 MAINTAINER Potiguar Faga <potz@potz.me>
 
-# Installs requirements for comiling the firmware
+# Installs requirements for compiling the firmware
 RUN apt-get update && \
     apt-get install -y git-core && \ 
     apt-get install -y gcc-avr binutils-avr avr-libc make && \
@@ -18,7 +18,7 @@ RUN git clone -q --branch=$BRANCH https://github.com/jackhumbert/qmk_firmware /f
     cd /firmware && git checkout -f $SHA && \
     cd /firmware/keyboards/ergodox/ez && make clean
 
-# Map this volume to some folder wher a keymap.c can be found.
+# Map this volume to some folder where a keymap.c can be found.
 # The resulting firmware.hex will also be put in this folder when finished.
 VOLUME /keymap
 
